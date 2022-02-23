@@ -1,0 +1,879 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background: #24353f;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #1ab188;
+    transition: 0.5s ease;
+}
+
+a:hover {
+    color: #179b77;
+}
+
+.form {
+    background: rgba(19, 35, 47, .9);
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, .3);
+}
+
+.tab-group {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+.tab-group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.tab-group li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    background: rgba(160, 179, 176, .25);
+    color: #a0b3b0;
+    font-size: 20px;
+    float: left;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.tab-group li a:hover {
+    background: #179b77;
+    color: #fff;
+}
+
+.tab-group .active a {
+    background: #1ab188;
+    color: #fff;
+}
+
+.tab-content>div:last-child {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    margin: 0 0 40px;
+}
+
+label {
+    position: absolute;
+    transform: translateY(6px);
+    left: 13px;
+    color: rgba(255, 255, 255, .5);
+    transition: all 0.25s ease;
+    pointer-events: none;
+    font-size: 22px;
+}
+
+label .req {
+    margin: 2px;
+    color: #1ab188;
+}
+
+label.active {
+    transform: translateY(50px);
+    left: 2px;
+    font-size: 14px;
+}
+
+label.active .req {
+    opacity: 0;
+}
+
+label.highlight {
+    color: #fff;
+}
+
+input,
+textarea {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+    background: none;
+    background-image: none;
+    border: 1px solid #a0b3b0;
+    color: #fff;
+    border-radius: 0;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: 0;
+    border-color: #1ab188;
+}
+
+textarea {
+    border: 2px solid #a0b3b0;
+    resize: vertical;
+}
+
+.field-wrap {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.top-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.top-row>div {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+
+.top-row>div:last-child {
+    margin: 0;
+}
+
+.button {
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 15px 0;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background: #1ab188;
+    color: #fff;
+    transition: all 0.5s ease;
+    -webkit-appearance: none;
+}
+
+.button:hover,
+.button:focus {
+    background: #179b77;
+}
+
+.button-block {
+    display: block;
+    width: 100%;
+}
+
+.forgot {
+    margin-top: -20px;
+    text-align: right;
+}
+
+.bg-light {
+    background-color: #29d0a2 !important;
+}
+
+.navbar-brand {
+    text-align: center;
+    color: #fff !important;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 1.5rem;
+}
+
+.nav-link:hover {
+    color: rgb(233, 222, 222) !important;
+    font-size: 1.5rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/******************header sec **********************************/
+
+#header-sec .fs {
+    font-size: 25.6px;
+}
+
+nav {
+    background-color: rgb(201, 195, 218);
+}
+
+#header-sec .z-in {
+    z-index: 9999999999999;
+}
+
+#header-sec a {
+    font-size: 1.2rem;
+}
+
+#header-sec .black-layer {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 10;
+}
+
+.d-table-cell {
+    vertical-align: middle;
+}
+
+#header-sec .back-image {
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+#header-sec .move-sec {
+    z-index: 15;
+}
+
+#header-sec .move h1 {
+    font-size: 4.5rem;
+    color: #fff;
+}
+
+#header-sec .move p {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.typing::after {
+    content: "";
+    animation: 5s alternate infinite moving;
+    border-right: 2px solid;
+}
+
+@media all and (max-width: 1024px) {
+    #header-sec .back-image {
+        background-attachment: scroll;
+    }
+    #header-sec .move h1 {
+        font-size: 3rem;
+    }
+}
+
+@keyframes moving {
+    0% {
+        content: "W";
+    }
+    2.5% {
+        content: "Web";
+    }
+    5% {
+        content: "Web De";
+    }
+    7.5% {
+        content: "Web Desi ";
+    }
+    10% {
+        content: "Web Design";
+    }
+    12.5% {
+        content: "Web Designer";
+    }
+    15% {
+        content: "Web Design";
+    }
+    17.5% {
+        content: "Web Desi ";
+    }
+    20% {
+        content: "Web De";
+    }
+    22.5% {
+        content: "Web";
+    }
+    25% {
+        content: "W";
+    }
+    27.5% {
+        content: "CE";
+    }
+    30% {
+        content: "CEO De";
+    }
+    32.5% {
+        content: "CEO DevF";
+    }
+    35% {
+        content: "CEO DevFol ";
+    }
+    37.5% {
+        content: "CEO DevFolio";
+    }
+    40% {
+        content: "CEO DevFol";
+    }
+    42.5% {
+        content: "CEO DevF";
+    }
+    45% {
+        content: "CEO De ";
+    }
+    47.5% {
+        content: "CEO";
+    }
+    50% {
+        content: "C";
+    }
+    52.5% {
+        content: "";
+    }
+    55% {
+        content: "Fr";
+    }
+    57.5% {
+        content: "Fron";
+    }
+    60% {
+        content: "Fronte";
+    }
+    62.5% {
+        content: "Frontend";
+    }
+    65% {
+        content: "Frontend D";
+    }
+    67.5% {
+        content: "Frontend Dev";
+    }
+    70% {
+        content: "Frontend Devel";
+    }
+    72.5% {
+        content: "Frontend Devel";
+    }
+    75% {
+        content: "Frontend Developer";
+    }
+    77.5% {
+        content: "Frontend Develop";
+    }
+    80% {
+        content: "Frontend Devel";
+    }
+    82.5% {
+        content: "Frontend Dev";
+    }
+    85% {
+        content: "Frontend D";
+    }
+    87.5% {
+        content: "Frontend";
+    }
+    90% {
+        content: "Fronte";
+    }
+    92.5% {
+        content: "Fron";
+    }
+    95% {
+        content: "Fr";
+    }
+    100% {
+        content: "";
+    }
+}
+
+
+/******************header sec end **********************************/
+
+
+/******************About me sec **********************************/
+
+#about-me-sec {
+    background-color: #f5f5f5;
+}
+
+#about-me-sec h4,
+.text-ali p {
+    display: inline;
+}
+
+#about-me-sec h4 {
+    font-size: 1.2rem;
+}
+
+#about-me-sec .image {
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+#about-me-sec img {
+    width: 100%;
+    border-radius: .25rem;
+}
+
+#about-me-sec .text-ali {
+    line-height: 2.7rem;
+}
+
+#about-me-sec .Skills {
+    text-align: left;
+    line-height: 3.1rem;
+}
+
+#about-me-sec .pull-right {
+    float: right;
+}
+
+#about-me-sec .about-me-title::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    bottom: -12px;
+}
+
+#about-me-sec .about-me-p {
+    width: 95%;
+    color: #4e4e4e;
+    font-weight: 300;
+}
+
+#about-me-sec .about-me-p p {
+    font-size: 1.25rem;
+}
+
+@media all and (max-width: 600px) {
+    #about-me-sec .text-ali {
+        line-height: 1.7rem;
+    }
+    #about-me-sec img {
+        width: 40%;
+        border-radius: .25rem;
+    }
+}
+
+
+/******************About me sec End **********************************/
+
+
+/******************services sec **********************************/
+
+#services-sec {
+    background-color: #f5f5f5;
+}
+
+.title-box {
+    margin-bottom: 4rem;
+}
+
+.title-box h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#services-sec .p-title {
+    color: #4e4e4e;
+}
+
+.under-line {
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+}
+
+#services-sec .icons-div {
+    margin-bottom: 3rem;
+    padding: 0 1.3rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+#services-sec .icon-font {
+    font-size: 3rem;
+    margin-top: 1.5rem;
+}
+
+#services-sec .icon-edit {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px #0078ff;
+    transition: all 500ms ease;
+}
+
+#services-sec .icons-div:hover .icon-edit {
+    background-color: #0078ff;
+    color: #fff;
+    box-shadow: 0 0 0 10px #cde1f8;
+    transition: all 500ms ease;
+}
+
+#services-sec .icon-title {
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+
+/****************** services sec  END*****************************/
+
+
+/****************** Counter sec **********************************/
+
+#counter-sec {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.counter-background {
+    background-attachment: fixed;
+    background-color: rgba(4, 118, 248, 0.5);
+    padding: 4rem 0;
+}
+
+#counter-sec .icons-div {
+    margin-bottom: 3rem;
+    padding: 0 1.3rem;
+    border-radius: 1rem;
+}
+
+#counter-sec .icon-edit {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+
+#counter-sec .icon-font {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+#counter-sec .icon-title {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+}
+
+
+/****************** Counter sec End ******************************/
+
+
+/****************** portfolio sec ******************************/
+
+#portfolio-sec {
+    background-color: #f5f5f5;
+}
+
+#portfolio-sec .work-box {
+    text-align: left;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+#portfolio-sec .work-content {
+    padding: 2rem 3% 1rem 4%;
+}
+
+#portfolio-sec .work-img {
+    overflow: hidden;
+}
+
+#portfolio-sec img {
+    transition: all 1s;
+}
+
+#portfolio-sec img:hover {
+    transform: scale(1.3, 1.3);
+}
+
+#portfolio-sec .work-title h5 {
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+#portfolio-sec .work-title span {
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+#portfolio-sec .link-icon {
+    font-size: 2rem;
+    bottom: 0;
+    right: 0;
+}
+
+
+/****************** portfolio sec End ******************************/
+
+
+/****************** Testimonials sec  ******************************/
+
+#testimonials-sec {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+#testimonials-sec .testimonials-title h2 {
+    font-size: 1.8rem;
+}
+
+#testimonials-sec .testimonials-title p {
+    font-size: 1.25rem;
+}
+
+#testimonials-sec .testimonials-img img {
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+}
+
+#testimonials-sec .testimonials-icon {
+    padding-top: 0.4vh;
+    text-align: center;
+    font-size: 2rem;
+    color: #0078ff;
+    background-color: #fff;
+    width: 52px;
+    height: 52px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+
+/****************** Testimonials sec End ***************************/
+
+
+/****************** BLOG sec  ***************************/
+
+#blog-sec {
+    background-color: #f5f5f5;
+    padding-top: 2rem;
+}
+
+#blog-sec .card-blog {
+    margin-bottom: 48px;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+#blog-sec img {
+    width: 100%;
+}
+
+#blog-sec .card-body {
+    width: 100%;
+}
+
+#blog-sec .card-category-box {
+    text-align: center;
+    top: -16px;
+    left: 15px;
+    right: 15px;
+    overflow: hidden;
+}
+
+#blog-sec .card-category {
+    display: inline-block;
+    color: #fff;
+    padding: 0 15px 2px;
+    overflow: hidden;
+    background-color: #0078ff;
+    border-radius: 4px;
+}
+
+#blog-sec .card-category h6 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: .7rem;
+}
+
+#blog-sec .card-body-title h3 {
+    font-size: 1.3rem;
+    margin-top: 0.6rem;
+    color: #1e1e1e;
+    transition: all 1s;
+}
+
+#blog-sec .card-body-title h3 {
+    font-size: 1.3rem;
+    margin-top: 0.6rem;
+    color: #1e1e1e;
+    transition: all 1s;
+}
+
+#blog-sec .card-body-title h3:hover {
+    color: #0078ff;
+}
+
+#blog-sec .auther {
+    display: inline-block;
+}
+
+#blog-sec .cord-footer {
+    border-top: 1px solid rgba(0, 0, 0, .125);
+    background-color: #f5f5f5;
+}
+
+#blog-sec .cord-footer img {
+    width: 32px;
+    height: 32px;
+}
+
+#blog-sec .post-date {
+    display: inline;
+    float: right;
+    margin-top: 5px;
+}
+
+
+/****************** BLOG sec End ***************************/
+
+
+/****************** Contact Us  sec ***************************/
+
+#contact-us {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+#contact-us .layer {
+    background-color: rgba(4, 118, 248, 0.5);
+}
+
+#contact-us .send-message {
+    margin-bottom: 48px;
+}
+
+#contact-us .under-line {
+    width: 100px;
+    height: 3px;
+    background-color: #0078ff;
+    margin: 0;
+}
+
+#contact-us .form-input {
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    border: 1px solid #ced4da;
+    padding-bottom: 10px;
+}
+
+#contact-us .contact-button {
+    border-radius: 5rem;
+}
+
+#contact-us .contact-button:hover {
+    box-shadow: 0 0 0 4px #cde1f8;
+    background: #3393ff;
+}
+
+@media all and (max-width: 1024px) {
+    #contact-us .contact-button {
+        margin-bottom: 2rem;
+    }
+}
+
+#contact-us .content {
+    padding: 48px;
+}
+
+#contact-us .content-m {
+    margin-top: 64px;
+}
+
+#contact-us .list-icon {
+    line-height: 2;
+}
+
+#contact-us .list-icon i {
+    color: #0078ff;
+}
+
+#contact-us .list-icon span {
+    margin-left: 10px;
+}
+
+#contact-us .icon-edit {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    font-size: 1.7rem;
+    border-radius: 50%;
+    line-height: 1.4;
+    margin: 0 15px 0 0;
+    box-shadow: 0 0 0 3px #0078ff;
+    transition: all 500ms ease;
+}
+
+#contact-us .icon-edit:hover {
+    background-color: #0078ff;
+    color: #fff;
+    box-shadow: 0 0 0 3px #cde1f8;
+}
+
+#contact-us ul {
+    list-style: none;
+}
+
+
+/****************** Contact Us  sec End ***************************/
+
+
+/****************** Footer sec  ***************************/
+
+footer {
+    background: #0062d3;
+}
+
+footer .copyright-box {
+    line-height: 0.8rem;
+    color: white;
+}
+
+footer .copyright {
+    margin-bottom: 10px;
+    color: white;
+}
+
+footer .credits {
+    color: white;
+}
+
+footer .credits a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/****************** Footer  sec End ***************************/

@@ -1,0 +1,23 @@
+<%- include('header.ejs') %> 
+<div class="form">
+    <div id="login">
+        <h1>Welcome Back!</h1>
+
+        <form action="/handleSignin" method="POST">
+            <div class="field-wrap">
+                <label> Email Address<span class="req">*</span> </label>
+                <input name="email" type="email" />
+            </div>
+
+            <div class="field-wrap">
+                <label> Password<span class="req">*</span> </label>
+                <input name="password" type="password" />
+            </div>
+
+            <p class="forgot"><a href="#">Forgot Password?</a></p>
+
+            <button class="button button-block">Log In</button>
+        </form>
+    </div>
+</div>
+<%- include('footer.ejs') %> 
